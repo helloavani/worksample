@@ -1,0 +1,32 @@
+<ion-header  >
+  <ion-toolbar  color = "primary" style=" color:white">
+    <ion-title>
+      LANDING PAGE:
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="--background:#539eed;" >
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header> -->
+
+  <div class="container" style="background-color: orangered;position: absolute;top: 33%;left: 8%;">
+    <ion-item>
+      <ion-label color="primary" floating>USERNAME:</ion-label>
+      <ion-input [(ngModel)]="name" placeholder="enter your name" ></ion-input>
+    </ion-item>
+   
+
+
+  </div>
+<div class="btn" >
+  <button (click)="submit(name)" style="margin-top: 22em;margin-left: 9em;width: 11em;height: 3em;" ion-button color="secondary">Submit</button>
+
+</div>
+
+<!-- s1.split(/[,-;:|\n.{}?!()]+/); -->
+
+</ion-content>

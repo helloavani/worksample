@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-toolbar color ="primary">
+    
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/dashboard"></ion-back-button>
+      </ion-buttons>
+      <div class="kar">
+        <ion-label >ADD TOPIC</ion-label>
+      </div>
+    
+  
+  </ion-toolbar>
+</ion-header>
+<ion-content fulscreen>
+  <ion-card>
+    
+    <ion-card-header>
+      <ion-card-subtitle style="text-align: center;">TopicDetail</ion-card-subtitle>
+      </ion-card-header>
+      <ion-item>
+       
+          <ion-label position="stacked">Title</ion-label>
+          <ion-input placeholder="enter title." [(ngModel)]="title"> </ion-input>
+        
+  <ion-textarea debounce="2000" [(ngModel)]="TopicDetail" (ionChange)="TopicDetailChange($event.target.value)" spellcheck="true"  color="dark" autofocus = "true" auto-grow="true" rows="10" cols="20" placeholder="Describe your Topic here..."></ion-textarea>
+</ion-item>
+  </ion-card>
+  <ion-card>
+    {{lines}}
+
+  </ion-card>
+
+</ion-content>
